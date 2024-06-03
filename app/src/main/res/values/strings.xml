@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">caresaas</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_title">Welcome back!👋</string>
+    <string name="sign_in_subtitle">Fill details to get started</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="blank_username_prompt">Username field cannot be blank</string>
+    <string name="blank_password_prompt">Password cannot be blank</string>
+    <string name="clock_in">Clock-in</string>
+    <string name="clock_in_to_begin_your_task">Clock-in to begin your task</string>
+    <string name="medication">Medication</string>
+    <string name="activities">Activities</string>
+    <string name="terms_conditions">By clicking \'Sign in\' above you agree to Arocare’s <a href=''>Terms &amp; Conditions</a> and <a href=''>Privacy Policy</a>.</string>
+    <string name="contact_support">Don\'t have an account? <font color="#6576FF">Contact Support</font>.</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="greeting">Hi, %s!</string>
+    <string name="take_a_break">Take a break</string>
+    <string name="clock_out">Clock-out</string>
+    <string name="clocked_in_subtitle">You can now begin your task</string>
+    <string name="clocked_in">Clocked In</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/task_bg">
+
+    <TextView
+        android:id="@+id/taskType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#364A63"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Personal Care" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_task_arrow_indicator"
+        app:layout_constraintBottom_toBottomOf="@+id/taskType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/taskType"
+        app:srcCompat="@drawable/ic_task_arrow_indicator" />
+
+    <TextView
+        android:id="@+id/assignee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:textColor="#364A63"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_person"
+        app:layout_constraintStart_toStartOf="@+id/taskType"
+        app:layout_constraintTop_toBottomOf="@+id/taskType"
+        tools:drawableStart="@drawable/ic_person"
+        tools:text="James" />
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:textColor="#364A63"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_room"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/assignee"
+        app:layout_constraintTop_toBottomOf="@+id/assignee"
+        tools:drawableStart="@drawable/ic_room"
+        tools:text="Rm 3A" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:textColor="#364A63"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_time"
+        app:layout_constraintBottom_toBottomOf="@+id/bed"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bed"
+        app:layout_constraintTop_toTopOf="@+id/bed"
+        tools:drawableStart="@drawable/ic_time"
+        tools:text="9:00Am" />
+
+    <TextView
+        android:id="@+id/bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:textColor="#364A63"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_bed"
+        app:layout_constraintBottom_toBottomOf="@+id/room"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/room"
+        app:layout_constraintTop_toTopOf="@+id/room"
+        tools:drawableStart="@drawable/ic_bed"
+        tools:text="Bed 45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
